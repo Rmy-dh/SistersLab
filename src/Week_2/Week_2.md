@@ -1,5 +1,3 @@
-### Bu sorulari kullanican degerler alarak veya kendiniz baslangic degeri vererek yapin
-
 
 Soru1: 
 Fibonacci sayılarını özyinelemeli (recursive) olarak bulan program
