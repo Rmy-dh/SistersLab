@@ -32,6 +32,10 @@ Girilen sayıyı asal mı kontrol eden program
 ---------------------------------------------
 Soru5:
 Kendi hesap makinenizi yapin
+```
+```
+
+
 --------------------------------------------
 Soru6:
 Ebob ve Ekok bulma
