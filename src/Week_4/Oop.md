@@ -1,5 +1,5 @@
 # ✏️Nesne Yönemli Programlamanın(OOP) 4 Temel İlkesi
-![](image\oop.jpg)
+
 ---------------------------------------------------
 >>> ***🎯Oop'ye başlamadan önce "Sınıf" ve "Nesne" Nedir?***
 >* Nesne tabanlı programlamada, programdaki en temel yapı taşı nesneler-sınıflardır.
@@ -32,7 +32,6 @@
 >  Author authhor3=new Author("Name3","Surname3")
 --------------------------------------------------
 >>> ### ***Oop nedir?***<br>
-> ![](image\oopConcept.jpg)
 > * Bir programlama yaklaşımıdır.
 > * Nesne yönelimli programlamada böl parçala yönet mantığı vardır.
 > * Hızlı ve uygulaması kolaydır.
@@ -53,7 +52,6 @@
 ▫️ Sınıfa ait değişkenleri veya nitelikleri private tanımlıyarak nesneler üzerinde bir koruma katmanı yapmamızı sağlar.  
 ▫️ Bu koruma katmanı sayesinde nesneler üzerinden anlamsız veriler almanın önüne geçmiş oluruz. 
 ```
-![](image\encapsulation.jpg)
 
  ***2- Inheritance (Kalıtım)***<br>
 ``` 
@@ -67,7 +65,6 @@ kullanılabilir. Bu noktada karşımıza interface ve abstract sınıflar çıka
 <br>
 
 >>> ***🎯Access Modifiers Nedir?***<br>
-> ![](image\accessModifiers.jpg)
 > * Sınıflara ait nitelik ve davranışları o sınıf içinden ve dışından erişimini belirtmek için kullanılır.
 > * ***Private*** ->  İlgili nitelik veya davranışın sadece o class içinde erişimini belirtir.
 > * ***Public*** -> İlgili nitelik, davranış ve class'ın her yerde erişime açık olduğunu belirtir.
