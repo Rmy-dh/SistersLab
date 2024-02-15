@@ -6,7 +6,7 @@
 
 >> ### 🎯Error?
 > * Error ler genellikle programcının kontrolü dışındadır. Throwable sınıfından exten alır.
->   (JVM kaynalı olan hatalar bellek tükenmesi, bellek sızıntılarıyığın taşması hataları, kitaplık uyumsuzluğu, sonsuz özyineleme vb.)
+>   (JVM kaynalı olan hatalar bellek tükenmesi, bellek sızıntıları,yığın taşması hataları, kitaplık uyumsuzluğu, sonsuz özyineleme vb.)
 >  * Stack Over Flow Error
 >  * Virtual Machine Error
 >  * Out of Memory Error
