@@ -45,24 +45,24 @@ CREATE TABLE user_comment(
 ### ADD VALUE TO  FILM TABLE
 ```
  INSERT INTO film(film_name,category,director,release_length,movie_length,score)
- VALUES('Film1','science fiction','Director1','1990.01.01',120,6),
-        ('Film2','drama','Director2','1990.02.01',60,2),
-        ('Film3','drama','Director3','1990.02.01',60,2),
-        ('Film5','comedy','Director5','1990.03.01',160,7),
-        ('Film8','science fiction','Director2','1990.02.01',80,4),
-        ('Film7','drama','Director6','1990.05.01',10,9),
-        ('Film10','comedy','Director1','1990.02.01',180,1);
+ VALUES('Film1','science fiction','Director1','1990.01.01',120,6),                   -> film_id=1
+        ('Film2','drama','Director2','1990.02.01',60,2),                             -> film_id=2
+        ('Film3','drama','Director3','1990.02.01',60,2),                             -> film_id=3
+        ('Film5','comedy','Director5','1990.03.01',160,7),                           -> film_id=4
+        ('Film8','science fiction','Director2','1990.02.01',80,4),                   -> film_id=5
+        ('Film7','drama','Director6','1990.05.01',10,9),                             -> film_id=6
+        ('Film10','comedy','Director1','1990.02.01',180,1);                          -> film_id=7
 ```
 ### ADD VALUE TO  SUBSCRIBER TABLE
 ```
   INSERT INTO subscriber(user_name,email,user_passwoord)
-  VALUES('User1','user1@gmail.com','Hal8y25'),
-         ('User6','user6@gmail.com','ak3yj5'),
-         ('User3','user3@gmail.com','Wllky9'),
-         ('User2','user2@gmail.com','8y25'),
-         ('User8','user8@gmail.com','H2y75'),
-         ('User5','user5@gmail.com','Hl9pdjy'),
-         ('User7','user7@gmail.com','Hal8y14');
+  VALUES('User1','user1@gmail.com','Hal8y25'),                                        -> user_id=1
+         ('User6','user6@gmail.com','ak3yj5'),                                        -> user_id=2
+         ('User3','user3@gmail.com','Wllky9'),                                        -> user_id=3
+         ('User2','user2@gmail.com','8y25'),                                          -> user_id=4
+         ('User8','user8@gmail.com','H2y75'),                                         -> user_id=5
+         ('User5','user5@gmail.com','Hl9pdjy'),                                       -> user_id=6
+         ('User7','user7@gmail.com','Hal8y14');                                       -> user_id=7
 ```
 ### ADD VALUE TO  USER_COMMENT TABLE
 ```
