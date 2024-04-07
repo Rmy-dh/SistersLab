@@ -1,5 +1,7 @@
 package Week_5;
 
+import ConstantOfSisterslab.ConstantOfInformation;
+
 public class ContainerWithMostWater {
 
     public static void main(String[] args) {
@@ -18,7 +20,7 @@ public class ContainerWithMostWater {
 
             }
         }
-        System.out.println("Answer is: "+maxArea);
+        System.out.println(ConstantOfInformation.ANSWERIS.getValue() +maxArea);
 
 
     }

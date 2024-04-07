@@ -1,5 +1,7 @@
 package Week_3;
 
+import ConstantOfSisterslab.ConstantOfInformation;
+
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Scanner;
@@ -16,8 +18,8 @@ public class OddOrEvenNumbers {
 
     }
     public static void print(HashSet<Integer> evenList,ArrayList<Integer> oddList){
-        System.out.println("Even List-> "+evenList);
-        System.out.println("Add List-> "+oddList);
+        System.out.println(ConstantOfInformation.EVENLIST.getValue()+evenList);
+        System.out.println(ConstantOfInformation.ADDLIST.getValue()+oddList);
     }
     public static void addEvenNumber(int number,HashSet<Integer> evenList){
         evenList.add(number);
@@ -36,13 +38,13 @@ public class OddOrEvenNumbers {
         Scanner input=new Scanner(System.in);
 
         while(condition){
-            System.out.print("Do you want to add number to Array, please write true or false:  ");
+            System.out.print(ConstantOfInformation.DOYOUWANTTOADD.getValue());
             condition=input.nextBoolean();
             if(!condition){
-                System.out.println("See you later.");
+                System.out.println(ConstantOfInformation.SEEYOULATER.getValue());
                 break;
             }
-            System.out.print("Enter your number :");
+            System.out.print(ConstantOfInformation.ENTERYOURNUMBER.getValue());
             number=input.nextInt();
             takeNumber(number,evenList,oddList);
         }

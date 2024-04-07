@@ -74,7 +74,7 @@
              6-Log Out!
              Select your process: 6
              
-     Output:  See you later.
+     Output:  See you later!
 ```
 --------------------------------------------------
 **Soru 4: Satis Takibi**  

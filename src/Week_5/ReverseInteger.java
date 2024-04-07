@@ -1,5 +1,7 @@
 package Week_5;
 
+import ConstantOfSisterslab.ConstantOfInformation;
+
 import java.util.Scanner;
 
 public class ReverseInteger {
@@ -15,7 +17,7 @@ public class ReverseInteger {
     }
     public static void main(String[] args) {
         Scanner input=new Scanner(System.in);
-        System.out.print("x = ");
+        System.out.print(ConstantOfInformation.X.getValue());
         int x=input.nextInt();
         findReverseNumber(x);          //Get x value
     }

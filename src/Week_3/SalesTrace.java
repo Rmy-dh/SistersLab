@@ -1,11 +1,13 @@
 package Week_3;
 
+import ConstantOfSisterslab.ConstantOfInformation;
+
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-public class SalesTracke {
-    public static void runSalesTracke(int selection,String name,double money,HashMap<String,Double> list){
+public class SalesTrace {
+    public static void runSalesTrace(int selection, String name, double money, HashMap<String,Double> list){
         switch (selection){
             case 1:
                 addCompanyToList(name,money,list);
@@ -26,14 +28,14 @@ public class SalesTracke {
     }
     public static void addCompanyToList(String name,Double money,HashMap<String,Double> list){
         list.put(name,money);
-        System.out.println("Company added.");
+        System.out.println(ConstantOfInformation.COMPANYADDED.getValue());
     }
     public static void deleteCompanyToList(String name,Double money,HashMap<String,Double> list){
         if(list.containsKey(name) && list.containsValue(money)){
             list.remove(name,money);
-            System.out.println("Company deleted.");
+            System.out.println(ConstantOfInformation.COMPANYDELETED.getValue());
         }else{
-            System.out.println("The company not found!");
+            System.out.println(ConstantOfInformation.COMPANYNOTFOUND.getValue());
         }
     }
     public static void getTotalAmountOfSales(int selection,HashMap<String,Double> list){
@@ -46,7 +48,7 @@ public class SalesTracke {
             }
         }
         if(selection==3){
-            System.out.println("Total amount of sales -> "+total);
+            System.out.println(ConstantOfInformation.TOTALAMOUNTOFSALES.getValue()+total);
         }
         if (selection==4){
             printMaxAmountOfCompany(maxMoney,list);
@@ -55,20 +57,22 @@ public class SalesTracke {
     public  static void printCompanies(HashMap<String,Double> list){
         System.out.println("---------Companies---------");
         for(Map.Entry<String,Double> entry : list.entrySet()){
-            System.out.println(entry.getKey()+" -> "+entry.getValue());
+            System.out.println(entry.getKey()+ConstantOfInformation.ARROW.getValue()+entry.getValue());
         }
 
     }
     public  static void printMaxAmountOfCompany(double maxMoney,HashMap<String,Double> list){
         for(Map.Entry<String,Double> entry : list.entrySet()){
             if(entry.getValue()==maxMoney){
-                System.out.println(entry.getKey()+" makes max amount of sales"+ " ("+maxMoney+")");
+                System.out.println(entry.getKey()+ConstantOfInformation.MAKESAMOUNTOFSALES.getValue()
+                        + ConstantOfInformation.LEFTPARANTHES.getValue()
+                        +maxMoney+ConstantOfInformation.RIGHTPARANTHES.getValue());
             }
         }
     }
     public static void main(String[] args) {
         int selection;
-        String companyName="";
+        String companyName=ConstantOfInformation.SPACE.getValue();
         double money=0;
         HashMap<String,Double> list=new HashMap<>();
         Scanner input=new Scanner(System.in);
@@ -76,22 +80,22 @@ public class SalesTracke {
 
         while (true){
             System.out.println(menu);
-            System.out.print("Enter your selection: ");
+            System.out.print(ConstantOfInformation.ENTERYOURSELECTION.getValue());
             selection=input.nextInt();
             System.out.println("------------------");
 
             if(selection>=6 || selection<=0){                               // log out system
-                System.out.println("See you later!");
+                System.out.println(ConstantOfInformation.SEEYOULATER.getValue());
                 break;
             }
             if(selection<=2 ){                                              // add and delete
-                System.out.print("Enter your company name: ");
+                System.out.print(ConstantOfInformation.ENTERYOURCOMPANYNAME.getValue());
                 companyName=input.next();
-                System.out.print("Enter your money :");
+                System.out.print(ConstantOfInformation.ENTERYOURMONEY.getValue());
                 money=input.nextInt();
 
             }
-            runSalesTracke(selection,companyName,money,list);
+            runSalesTrace(selection,companyName,money,list);
             System.out.println("---------New Process---------");
 
 
